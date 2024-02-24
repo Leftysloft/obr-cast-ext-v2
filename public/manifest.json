@@ -1,0 +1,12 @@
+{
+  "name": "PC Character sheets (local)",
+  "version": "1.1.0",
+  "manifest_version": 2,
+  "action": {
+    "title": "PC Character's",
+    "icon": "/heart.svg",
+    "popover": "/",
+    "height":2000,
+    "width": 135
+      }
+}
