@@ -1,6 +1,6 @@
 import "./style.css";
 import OBR from "@owlbear-rodeo/sdk";
-import { imageFilter } from "./src/image-fetch";
+import { imageFilter } from "./src/imageFetch";
 
 document.querySelector("#app").innerHTML = `
   <div id="app"></div>
@@ -12,5 +12,5 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 OBR.onReady(() => {
-  imageFilter(); // Source ".src/image-fetch"
+  imageFilter(); // Source "./src/image-fetch"
 });
