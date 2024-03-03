@@ -1,3 +1,5 @@
+//This file is no longer used
+
 import OBR from "@owlbear-rodeo/sdk";
 import { ID } from "./constants";
 import { isImage } from "@owlbear-rodeo/sdk";

@@ -1,8 +1,9 @@
 //This file is used to get the URL from all characters in the current scene.
 import OBR from "@owlbear-rodeo/sdk";
 import { isImage } from "@owlbear-rodeo/sdk";
+import { charUrl } from "./imageData";
 
-export async function imageFilter() {
+export async function imageFilter(characterUrl) {
   OBR.scene.items.onChange(async (characters) => {
     // begin filter
     characters = await OBR.scene.items.getItems(
@@ -10,16 +11,17 @@ export async function imageFilter() {
     );
     // end filter
 
-    // not used // sort characters
-    const sortedCharacter = characters.sort((a, b) =>
-      a.name.localeCompare(b.name)
-    );
-
     characters.forEach((element) => {
       const findElement = [element].find((element2) => element2); // separate characters
       const listElement = [findElement[`image`]]; // get image elements
       const findUrl = [...listElement].find((element3) => element3); // get url from image
-      console.log("URL", findUrl[`url`]);
+      characterUrl = findUrl[`url`];
+      // console.log("character URL", characterUrl);
+      charUrl(characterUrl);
     });
   });
 }
+// // not used // sort characters
+// const sortedCharacter = characters.sort((a, b) =>
+//   a.name.localeCompare(b.name)
+// );
