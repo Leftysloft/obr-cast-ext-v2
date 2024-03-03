@@ -1,4 +1,4 @@
-//This file will be used to set notebook and dndBeyond URL's to room metadata
+//This file will be used to compare image URL's to room metadata URL's
 
 export async function charUrl(char) {
   console.log(char);
