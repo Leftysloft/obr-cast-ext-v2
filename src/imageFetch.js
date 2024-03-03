@@ -11,10 +11,12 @@ export async function imageFilter() {
     // end filter
 
     console.log("characters", characters);
-    const resolve = Promise.resolve([...characters]);
-    console.log("promise2", resolve);
-    (await resolve).forEach((element) => console.log(element));
 
+    const resolve = Promise.resolve([...characters]);
+    console.log("all characters, resolved", resolve);
+    (await resolve).forEach((element) =>
+      console.log("all character elements", element)
+    );
     resolve.then((...meta2) => {
       console.log(
         "resolve 'element2'",
