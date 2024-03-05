@@ -33,7 +33,7 @@ export async function imageFilter() {
     });
 
     // // For testing only.  This will move to "./src/image-match.js" & "contextMenu"
-    // //TODO: Add a context meny item to set PC = true.  If true, store data in room meta
+    // //TODO: Add a context menu item to set PC = true.  If true, store data in room meta
     // // console.log("scene meta", OBR.scene.getMetadata()); //not used atm
     // // console.log("room meta", OBR.room.getMetadata({ [`${ID}`]: characters }));
     // OBR.room.setMetadata({ [`${ID}`]: characters });
