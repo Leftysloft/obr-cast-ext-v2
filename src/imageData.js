@@ -15,7 +15,6 @@ export async function charUrl() {
       const listImage = [listElement[`image`]].find((element) => element);
       const listUrl = [listImage[`url`]];
       console.log("listUrl", listUrl);
-      console.log(listUrl.length);
     });
   });
 }
