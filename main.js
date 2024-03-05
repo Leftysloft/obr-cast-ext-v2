@@ -14,5 +14,6 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 OBR.onReady(() => {
+  OBR.action.open();
   imageFilter();
 });
