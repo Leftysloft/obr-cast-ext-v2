@@ -3,7 +3,7 @@ import OBR from "@owlbear-rodeo/sdk";
 import { isImage } from "@owlbear-rodeo/sdk";
 import { charUrl } from "./imageData";
 
-export async function imageFilter(characterUrl) {
+export async function imageFilter(characterUrl, characterName) {
   OBR.scene.items.onChange(async (characters) => {
     // begin filter
     characters = await OBR.scene.items.getItems(
@@ -15,8 +15,11 @@ export async function imageFilter(characterUrl) {
       const findElement = [element].find((element2) => element2); // separate characters
       const listElement = [findElement[`image`]]; // get image elements
       const findUrl = [...listElement].find((element3) => element3); // get url from image
-      characterUrl = findUrl[`url`];
-      charUrl(characterUrl);
+      const listName = findElement[`name`]; // get name
+      characterUrl = findUrl[`url`]; //get URL
+      //console.log("name", listName)
+
+      charUrl(characterUrl, listName);
     });
   });
 }
