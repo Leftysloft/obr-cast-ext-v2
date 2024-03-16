@@ -17,7 +17,7 @@ export async function imageFilter(characterUrl, characterName) {
       const findUrl = [...listElement].find((element3) => element3); // get url from image
       const listName = findElement[`name`]; // get name
       characterUrl = findUrl[`url`]; //get URL
-      //console.log("name", listName)
+      console.log("name", characterUrl);
 
       charUrl(characterUrl, listName);
     });
