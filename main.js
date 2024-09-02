@@ -17,7 +17,7 @@ document.querySelector("#app").innerHTML = `
   <div class="button">
   <script type="module" src="./popup.js"></script>
     <button type="button"
-      onclick="window.open('./src/character-data.html', 'mozillaWindow', 'left=100,top=100,width=600,height=800')">Add Players</button>
+      onclick="window.open('./character-data.html', 'mozillaWindow', 'left=100,top=100,width=600,height=800')">Add Players</button>
   </div>
 `;
 OBR.onReady(() => {
