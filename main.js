@@ -4,7 +4,7 @@ import OBR from "@owlbear-rodeo/sdk";
 //import { imageFilter } from "./src/imageUrl"; //Current file for getting the image url from all characters on a scene.
 //import { imageFilter } from "./src/imageFetch"; //This is the original file for retrieving character image urls.
 import { imageFilter } from "./src/imageUrl";
-import { ID } from "../obr-cast-ext-v2/src/constants";
+import { ID } from "./src/constants";
 
 document.querySelector("#app").innerHTML = `
   <div id="app"></div>
