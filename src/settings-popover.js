@@ -1,7 +1,7 @@
-import "../style.css";
+import "../src/setting.style.css";
 
 document.querySelector("#app").innerHTML = `
-  <div id="app"></div>
+  <div id="button"></div>
   <script type="module" src="/main.js"></script>
   <div class="button">
     <button type="button"

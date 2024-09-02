@@ -7,7 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "./index.html"),
-        nested: resolve(__dirname, "./src/character-data.html"),
+        nested: resolve(__dirname, "./src/settings-popover.html"),
       },
     },
   },

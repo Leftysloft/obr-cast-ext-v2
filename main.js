@@ -6,15 +6,6 @@ import OBR from "@owlbear-rodeo/sdk";
 import { imageFilter } from "./src/imageUrl";
 import { ID } from "./src/constants";
 
-document.querySelector("#app").innerHTML = `
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
-  <div class="button">
-    <button type="button"
-      onclick="window.open('https://github.com/Leftysloft/obr-ext-healthbars/tree/main#readme', 'mozillaWindow', 'left=100,top=100,width=600,height=800')">Usage
-      Guide</button>
-  </div>
-`;
 OBR.onReady(() => {
   //Open popover menu
   const popoverBtn = document.getElementById("popoverButton");
@@ -22,11 +13,10 @@ OBR.onReady(() => {
     console.log("popoverBtn");
     OBR.popover.open({
       id: ID,
-      url: "/src/character-data.html",
+      url: "/src/settings.html",
       height: 400,
       width: 400,
     });
-    console.log("popup");
   };
 
   OBR.action.open();
