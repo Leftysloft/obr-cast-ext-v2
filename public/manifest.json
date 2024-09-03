@@ -1,5 +1,5 @@
 {
-  "name": "Character Healthbars v2 (local)",
+  "name": "Character Healthbars v2 (remote)",
   "version": "1.1.0",
   "manifest_version": 2,
   "action": {
@@ -7,6 +7,6 @@
     "icon": "/heart.svg",
     "popover": "/",
     "height": 2000,
-    "width": 250
+    "width": 500
   }
 }
