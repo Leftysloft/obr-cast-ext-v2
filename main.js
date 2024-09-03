@@ -13,7 +13,7 @@ OBR.onReady(() => {
     console.log("popoverBtn");
     OBR.popover.open({
       id: ID,
-      url: "/src/settings.html",
+      url: "/src/settings-popover.html",
       height: 400,
       width: 400,
     });
