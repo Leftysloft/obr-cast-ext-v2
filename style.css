@@ -56,12 +56,9 @@ input[type="image" i] {
   padding-right: 5px;
 }
 
-/* #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
+#app {
+  max-width: 100px;
+}
 
 .logo {
   height: 6em;
