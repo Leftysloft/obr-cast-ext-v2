@@ -8,7 +8,6 @@ OBR.onReady(() => {
   //Open popover menu
   const popoverBtn = document.getElementById("popoverButton");
   popoverBtn.onclick = () => {
-    console.log("popoverBtn");
     OBR.popover.open({
       id: ID,
       url: "/src/settings-popover.html",
