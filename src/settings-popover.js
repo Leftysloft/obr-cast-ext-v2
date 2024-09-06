@@ -211,4 +211,5 @@ export async function editSheetFunction(uuid, url) {
 
 OBR.onReady(() => {
   setupSheetList(document.querySelector("#sheet-list"));
+  console.log("settings onready");
 });
