@@ -47,6 +47,23 @@ h1 {
   line-height: 1.1;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: normal;
+  border: solid;
+  border-width: thin;
+  border-color: blue;
+  padding: 4px;
+  margin-top: 3px;
+  margin-right: 0px;
+  font-size: large;
+  list-style: none;
+}
+
 input[type="image" i] {
   appearance: none;
   background-color: initial;
