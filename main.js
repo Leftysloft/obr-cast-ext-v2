@@ -5,6 +5,7 @@ import OBR from "@owlbear-rodeo/sdk";
 //import { imageFilter } from "./src/imageFetch"; //This is the original file for retrieving character image urls.
 import { imageFilter } from "./src/imageUrl";
 import { ID } from "./src/constants";
+import { setupContextMenu } from "./contextMenu";
 
 OBR.onReady(() => {
   //Open popover menu
@@ -20,5 +21,5 @@ OBR.onReady(() => {
   };
 
   OBR.action.open();
-  imageFilter();
+  setupContextMenu();
 });
