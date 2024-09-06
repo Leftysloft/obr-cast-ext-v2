@@ -13,14 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h3 {
+  display: flex;
+  margin-top: 0;
+}
+
 #title {
   display: flex;
-  place-items: center;
-  margin: 1em;
-  min-width: 10em;
+  max-width: 5em;
   min-height: auto;
-  flex-direction: column;
   align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 8em;
 }
 
 a {
@@ -33,18 +38,25 @@ a:hover {
 }
 
 body {
-  margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  align-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10px;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+input[type="image" i] {
+  appearance: none;
+  background-color: initial;
+  cursor: pointer;
+  padding: initial;
+  border: initial;
+  padding-right: 5px;
 }
 
 #app {
