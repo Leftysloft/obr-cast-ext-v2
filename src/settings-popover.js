@@ -208,3 +208,7 @@ export async function editSheetFunction(uuid, url) {
     }
   );
 }
+
+OBR.onReady(() => {
+  setupSheetList(document.querySelector("#sheet-list"));
+});
