@@ -1,6 +1,6 @@
 import OBR from "@owlbear-rodeo/sdk";
 import "../style.css";
-import "../sheetList";
+import { setupSheetList } from "./sheetList";
 
 OBR.onReady(() => {
   document.querySelector("#app").innerHTML = `
