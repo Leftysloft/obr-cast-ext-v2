@@ -10,7 +10,7 @@ OBR.onReady(() => {
   popoverBtn.onclick = () => {
     OBR.popover.open({
       id: ID,
-      url: "/src/settings-popover.html",
+      url: "/settings/settings-main.html",
       height: 400,
       width: 400,
     });
