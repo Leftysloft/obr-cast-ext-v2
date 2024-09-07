@@ -13,14 +13,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h3 {
+  display: flex;
+  margin-top: 0;
+}
+
 #title {
+  display: flex;
+  max-width: 5em;
+  min-height: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 8em;
+}
+/* #title {
   display: flex;
   flex-direction: column;
   place-items: center;
   margin: 1em;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 ul {
   display: flex;
@@ -49,25 +63,39 @@ a:hover {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="image" i] {
+  appearance: none;
+  background-color: initial;
+  cursor: pointer;
+  padding: initial;
+  border: initial;
+  padding-right: 5px;
+}
+
+/* body {
   margin: 1em;
   display: flex;
   flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-#app {
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0.1rem;
   text-align: center;
-}
+} */
 
 .logo {
   height: 6em;
