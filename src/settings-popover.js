@@ -1,6 +1,6 @@
 import OBR from "@owlbear-rodeo/sdk";
 // import { ID } from "../src/constants";
-import "../style.css";
+import "../setting.style.css";
 import { settingsList } from "./settings-list";
 
 document.querySelector("#app").innerHTML = `
