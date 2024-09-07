@@ -1,5 +1,5 @@
 import OBR from "@owlbear-rodeo/sdk";
-import { ID } from "./src/constants";
+import { ID } from "../src/constants";
 import "./style.css";
 
 let cachedItems = [];
