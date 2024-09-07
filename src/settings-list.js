@@ -62,12 +62,12 @@ export async function settingsList(element) {
           }
         }
 
-        const embed = node.querySelector(".embed-view");
-        if (embed) {
-          embed.src =
-            "https://lefty469.pythonanywhere.com/character_server?id=" +
-            urlItem.character_id;
-        }
+        // const embed = node.querySelector(".embed-view");
+        // if (embed) {
+        //   embed.src =
+        //     "https://lefty469.pythonanywhere.com/character_server?id=" +
+        //     urlItem.character_id;
+        // }
 
         // we need this to replace the eventlistener: https://stackoverflow.com/a/9251864
         const sheetLink = node.querySelector(".sheet-url");
