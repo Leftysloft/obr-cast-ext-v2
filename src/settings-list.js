@@ -13,11 +13,11 @@ export async function settingsList(element) {
       const metadata = item.metadata[`${ID}/metadata`];
       if (metadata) {
         sheetItems.push({
-          //   url: metadata.url,
-          //   character_id: metadata.character_id,
+          url: metadata.url,
+          character_id: metadata.character_id,
           name: item.text.plainText,
           visible: metadata.visible,
-          //   id: item.id,
+          id: item.id,
         });
       }
     }
@@ -62,12 +62,12 @@ export async function settingsList(element) {
           }
         }
 
-        // const embed = node.querySelector(".embed-view");
-        // if (embed) {
-        //   embed.src =
-        //     "https://lefty469.pythonanywhere.com/character_server?id=" +
-        //     urlItem.character_id;
-        // }
+        const embed = node.querySelector(".embed-view");
+        if (embed) {
+          embed.src =
+            "https://lefty469.pythonanywhere.com/character_server?id=" +
+            urlItem.character_id;
+        }
 
         // we need this to replace the eventlistener: https://stackoverflow.com/a/9251864
         const sheetLink = node.querySelector(".sheet-url");
@@ -85,17 +85,17 @@ export async function settingsList(element) {
 
           const anode = document.createElement("character-portrait");
 
-          //  Display a character in an iframe (works?)
-          const fnode = document.createElement("embed");
-          fnode.classList.add("embed-view");
-          fnode.setAttribute("width", 75);
-          fnode.setAttribute("height", 75);
-          fnode.setAttribute(
-            "src",
-            "https://lefty469.pythonanywhere.com/character_server?id=" +
-              urlItem.character_id
-          );
-          anode.appendChild(fnode);
+          //   //  Display a character in an iframe (works?)
+          //   const fnode = document.createElement("embed");
+          //   fnode.classList.add("embed-view");
+          //   fnode.setAttribute("width", 75);
+          //   fnode.setAttribute("height", 75);
+          //   fnode.setAttribute(
+          //     "src",
+          //     "https://lefty469.pythonanywhere.com/character_server?id=" +
+          //       urlItem.character_id
+          //   );
+          //   anode.appendChild(fnode);
 
           //TODO TRY TO CREAT A SUBNODE FOR ICONS
           const bnode = document.createElement("icon");
