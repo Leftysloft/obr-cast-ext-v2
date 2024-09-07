@@ -3,5 +3,5 @@ import "../style.css";
 import "../sheetList";
 
 OBR.onReady(() => {
-  setupSheetList();
+  setupSheetList(document.querySelector("#sheet-list"));
 });
