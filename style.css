@@ -62,6 +62,7 @@ ul {
   margin-right: 0px;
   font-size: large;
   list-style: none;
+  width: fit-content;
 }
 
 input[type="image" i] {
