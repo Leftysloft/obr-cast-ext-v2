@@ -13,11 +13,11 @@ export async function settingsList(element) {
       const metadata = item.metadata[`${ID}/metadata`];
       if (metadata) {
         sheetItems.push({
-          url: metadata.url,
-          character_id: metadata.character_id,
+          //   url: metadata.url,
+          //   character_id: metadata.character_id,
           name: item.text.plainText,
           visible: metadata.visible,
-          id: item.id,
+          //   id: item.id,
         });
       }
     }
