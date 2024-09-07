@@ -1,7 +1,7 @@
 import "../style.css";
-import { imageFilter } from "../src/imageFetch";
+import { imageFilter } from "../src/imageUrl";
 import OBR from "@owlbear-rodeo/sdk";
 
 OBR.onReady(() => {
-  imageFilter();
+  imageFilter(characterUrl, characterName);
 });
