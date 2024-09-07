@@ -1,7 +1,6 @@
 import OBR from "@owlbear-rodeo/sdk";
 import { ID } from "../src/constants";
-import "/src/settings.style.css";
-import "/src/setting.style.css";
+import "../setting.style.css";
 
 let cachedItems = [];
 export async function settingsList(element) {
