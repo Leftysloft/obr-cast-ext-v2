@@ -85,17 +85,17 @@ export async function settingsList(element) {
 
           const anode = document.createElement("character-portrait");
 
-          //   //  Display a character in an iframe (works?)
-          //   const fnode = document.createElement("embed");
-          //   fnode.classList.add("embed-view");
-          //   fnode.setAttribute("width", 75);
-          //   fnode.setAttribute("height", 75);
-          //   fnode.setAttribute(
-          //     "src",
-          //     "https://lefty469.pythonanywhere.com/character_server?id=" +
-          //       urlItem.character_id
-          //   );
-          //   anode.appendChild(fnode);
+          //  Display a character in an iframe (works?)
+          const fnode = document.createElement("embed");
+          fnode.classList.add("embed-view");
+          fnode.setAttribute("width", 75);
+          fnode.setAttribute("height", 75);
+          fnode.setAttribute(
+            "src",
+            "https://lefty469.pythonanywhere.com/character_server?id=" +
+              urlItem.character_id
+          );
+          anode.appendChild(fnode);
 
           //TODO TRY TO CREAT A SUBNODE FOR ICONS
           const bnode = document.createElement("icon");

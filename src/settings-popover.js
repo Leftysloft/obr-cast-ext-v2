@@ -13,6 +13,12 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 
+document.querySelector("#app").innerHTML = `
+<div>
+  <ul id="sheet-list"></ul>
+</div>
+`;
+
 OBR.onReady(() => {
   settingsList(document.querySelector("#sheet-list"));
   console.log("settings onready");
