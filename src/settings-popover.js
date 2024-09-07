@@ -1,6 +1,7 @@
 import OBR from "@owlbear-rodeo/sdk";
 // import { ID } from "../src/constants";
 import "../style.css";
+import { setupSheetList } from "../sheetList";
 
 document.querySelector("#app").innerHTML = `
   <div id="button"></div>
