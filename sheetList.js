@@ -2,7 +2,7 @@ import OBR from "@owlbear-rodeo/sdk";
 import { ID } from "./src/constants";
 import "./style.css";
 
-let cachedItems = [];
+export let cachedItems = [];
 export async function setupSheetList(element) {
   const renderList = async (items) => {
     // Get the url of any item with
@@ -19,8 +19,12 @@ export async function setupSheetList(element) {
           visible: metadata.visible,
           id: item.id,
         });
+        // console.log("sheetList", metadata);
       }
+      const ten = metadata;
+      console.log(ten);
     }
+
     // Sort alphabetically
     const sortedItems = sheetItems.sort((a, b) => a.name.localeCompare(b.name));
     const changedItems = [];
@@ -46,6 +50,8 @@ export async function setupSheetList(element) {
         node.remove();
       }
     });
+
+    //check for import cached items in setup-main
     cachedItems = sortedItems;
 
     // Create new list nodes for each url item
@@ -134,7 +140,7 @@ export async function setupSheetList(element) {
             bnode.appendChild(cnode);
           }
 
-          // Creates image for link to url page
+          // Creates image for link to notes page
           const inode = document.createElement("img");
           inode.setAttribute("src", "fa-circle-right.svg");
           inode.classList.add("sheet-url");

@@ -32,6 +32,7 @@ export async function setupContextMenu() {
       const addToURLS = context.items.every(
         (item) => item.metadata[`${ID}/metadata`] === undefined
       );
+
       if (addToURLS) {
         const character_id = window.prompt(
           "Enter ONLY the character <id> number from DnDBeyond.\nNOTE: This requires the DnDBeyond character sheet to have an image set."
@@ -46,6 +47,8 @@ export async function setupContextMenu() {
               };
             }
           });
+        // console.log("context", item.metadata[`${ID}/metadata`]);
+        console.log(character_id, "item id");
       } else {
         OBR.scene.items.updateItems(context.items, (items) => {
           for (let item of items) {
