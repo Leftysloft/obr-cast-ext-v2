@@ -3,6 +3,7 @@ import OBR from "@owlbear-rodeo/sdk";
 import { ID } from "./src/constants";
 import { setupContextMenu } from "./contextMenu";
 import { setupSheetList } from "./sheetList";
+import { imageFilter } from "./src/imageUrl";
 
 OBR.onReady(() => {
   //Open popover menu
@@ -21,6 +22,7 @@ OBR.onReady(() => {
   </div>
 `;
   setupContextMenu();
+  imageFilter();
   setupSheetList(document.querySelector("#sheet-list"));
   OBR.action.open();
 });

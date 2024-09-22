@@ -12,10 +12,10 @@ export async function imageFilter() {
     );
     // end filter
 
-    console.log("characters", characters);
+    // console.log("characters", characters);
 
     const resolve = Promise.resolve([...characters]);
-    console.log("all characters, resolved", resolve);
+    // console.log("all characters, resolved", resolve);
     (await resolve).forEach((element) =>
       console.log("all character elements", element)
     );
@@ -24,12 +24,12 @@ export async function imageFilter() {
         "resolve 'element2'",
         meta2.find((element2) => element2)
       );
-      console.log("meta2", ...meta2);
+      // console.log("meta2", ...meta2);
       const [resolve2] = [...meta2].find((element2) => element2);
-      console.log("resolve2-1", [resolve2]);
-      console.log("resolve2", [resolve2[`image`]]);
+      // console.log("resolve2-1", [resolve2]);
+      // console.log("resolve2", [resolve2[`image`]]);
       const resolve3 = [resolve2[`image`]].find((element) => element);
-      console.log("resolve3", resolve3[`url`]);
+      // console.log("resolve3", resolve3[`url`]);
     });
 
     // // For testing only.  This will move to "./src/image-match.js" & "contextMenu"
