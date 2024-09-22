@@ -22,7 +22,7 @@ OBR.onReady(() => {
   </div>
 `;
   setupContextMenu();
-  imageFilter();
+  // imageFilter();
   setupSheetList(document.querySelector("#sheet-list"));
   OBR.action.open();
 });

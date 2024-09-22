@@ -12,7 +12,7 @@ export async function charUrl(characterUrl, characterName) {
   const promise1 = Promise.resolve(...data);
   promise1.then((meta) => {
     const sceneData2 = meta[`${ID}`];
-    // console.log("sceneData2", sceneData2);
+    console.log("sceneData2", sceneData2);
     // console.log("metadata", data);
 
     // });
