@@ -9,7 +9,7 @@ OBR.onReady(() => {
     <ul id="sheet-list"></ul>
   </div>
 `;
-  setupContextMenu();
+  // setupContextMenu();
   // imageFilter();
   settingsPopover(document.querySelector("#sheet-list"));
   OBR.action.open();
