@@ -9,7 +9,7 @@ export function settingsPopover() {
     // Get the url of any item with
     // our gsheet metadata
     const sheetItems = [];
-
+    console.log("testing", sheetItems);
     for (const item of items) {
       const metadata = item.metadata[`${ID}/metadata`];
       if (metadata) {
@@ -26,7 +26,7 @@ export function settingsPopover() {
       console.log("metadata", metadata);
       console.log("sheetItems 2", sheetItems);
     }
-    OBR.scene.items.onChange(renderList);
+    // OBR.scene.items.onChange(renderList);
     // console.log("renderedList", items);
   };
 
