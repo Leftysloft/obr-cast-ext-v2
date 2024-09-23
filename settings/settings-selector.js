@@ -2,14 +2,14 @@ import OBR from "@owlbear-rodeo/sdk";
 import { ID } from "../src/constants";
 import "../style.css";
 
-let element = [];
+// let element = [];
 
-export async function settingsPopover() {
+export async function settingsPopover(element) {
   const renderList = async (items) => {
     // Get the url of any item with
     // our gsheet metadata
     const sheetItems = [];
-
+    console.log("Hellooooooo");
     for (const item of items) {
       const metadata = item.metadata[`${ID}/metadata`];
       if (metadata) {
@@ -109,7 +109,6 @@ export async function settingsPopover() {
   };
   OBR.scene.items.onChange(renderList);
 }
-
 // Set link (circle right) visible to players
 export async function visibileFunction(uuid) {
   const vis = document.getElementById(uuid).checked;

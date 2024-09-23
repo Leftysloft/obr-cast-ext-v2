@@ -47,8 +47,8 @@ export async function setupSheetList(element, newItem) {
       }
       // console.log("changedItems.push", item);
       newItem = item;
-      return newItem;
     });
+    return newItem;
     console.log("changedItems.push", newItem);
     // we need to remove all nodes that are no longer in the sortedItems Array
     const ids = sortedItems.map((s) => s.id);

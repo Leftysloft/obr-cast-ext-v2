@@ -9,6 +9,6 @@ OBR.onReady(() => {
 </div>
 `;
 
-  settingsPopover();
+  settingsPopover(document.querySelector("#settings-page"));
 });
 // console.log("hello");
