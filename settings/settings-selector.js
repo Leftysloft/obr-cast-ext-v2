@@ -28,15 +28,15 @@ export async function settingsPopover(element) {
     for (const urlItem of sortedItems) {
       const playerRole = await OBR.player.getRole();
       if (!urlItem.visible) {
-        // console.log('vis undefined');
+        console.log("vis undefined");
         urlItem.visible = false;
       }
 
-      // console.log('role-vis:'+playerRole+"-"+urlItem.visible);
+      console.log("role-vis:" + playerRole + "-" + urlItem.visible);
       if (playerRole == "GM" || urlItem.visible) {
         const node = document.createElement("ul");
         node.textContent = `${urlItem.name}`;
-        //        console.log(urlItem.id);
+        console.log(urlItem.id);
 
         const anode = document.createElement("character-portrait");
 
