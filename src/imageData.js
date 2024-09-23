@@ -10,6 +10,7 @@ export async function charUrl(characterUrl, characterName) {
   });
   const data = [OBR.scene.getMetadata()];
   const promise1 = Promise.resolve(...data);
+  console.log("scene data", data);
   promise1.then((meta) => {
     const sceneData2 = meta[`${ID}`];
     console.log("sceneData2", sceneData2);

@@ -9,6 +9,7 @@ export async function imageFilter(characterUrl) {
     characters = await OBR.scene.items.getItems(
       (items) => items.layer === "CHARACTER" && isImage(items)
     );
+    console.log("filter");
     // end filter
 
     characters.forEach((element) => {

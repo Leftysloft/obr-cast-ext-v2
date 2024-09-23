@@ -4,7 +4,7 @@ import "./style.css";
 
 let cachedItems = [];
 
-export async function setupSheetList(element) {
+export async function setupSheetList(element, newItem) {
   const renderList = async (items) => {
     // Get the url of any item with
     // our gsheet metadata
@@ -32,6 +32,7 @@ export async function setupSheetList(element) {
     sortedItems.forEach((item) => {
       const cachedItem = cachedItems.find((i) => i.id === item.id);
       if (cachedItem) {
+        // console.log("cachedItem", cachedItem);
         if (
           item.url !== cachedItem.url ||
           item.character_id !== cachedItem.character_id ||
@@ -39,10 +40,16 @@ export async function setupSheetList(element) {
         ) {
           changedItems.push(item);
         }
+        // console.log("cachedItem", cachedItem);
       } else {
         changedItems.push(item);
+        // console.log("changedItems.push", item);
       }
+      // console.log("changedItems.push", item);
+      newItem = item;
+      return newItem;
     });
+    console.log("changedItems.push", newItem);
     // we need to remove all nodes that are no longer in the sortedItems Array
     const ids = sortedItems.map((s) => s.id);
     cachedItems.forEach((cachedItem) => {
@@ -159,8 +166,10 @@ export async function setupSheetList(element) {
         }
       }
     });
+    console.log("itemshello", items);
   };
   OBR.scene.items.onChange(renderList);
+  // console.log("renderedList", items);
 }
 
 // Set link (circle right) visible to players
