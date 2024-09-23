@@ -105,7 +105,8 @@ export async function settingsPopover(element) {
 
     element.replaceChildren(...nodes);
   };
-  OBR.scene.items.onChange(renderList);
+  OBR.scene.items.getItems(renderList[1]);
+  console.log("renderList", renderList[1]);
 }
 
 // Set link (circle right) visible to players
