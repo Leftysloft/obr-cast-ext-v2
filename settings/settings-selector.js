@@ -2,7 +2,9 @@ import OBR from "@owlbear-rodeo/sdk";
 import { ID } from "../src/constants";
 import "../style.css";
 
-export async function settingsPopover(element) {
+let element = [];
+
+export async function settingsPopover() {
   const renderList = async (items) => {
     // Get the url of any item with
     // our gsheet metadata

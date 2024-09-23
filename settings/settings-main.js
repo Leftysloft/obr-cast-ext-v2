@@ -9,6 +9,6 @@ OBR.onReady(() => {
 </div>
 `;
 
-  settingsPopover(element);
+  settingsPopover();
 });
 // console.log("hello");
